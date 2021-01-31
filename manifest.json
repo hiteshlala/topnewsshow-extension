@@ -1,0 +1,26 @@
+{
+  "manifest_version": 3,
+  "author": "Hitesh Lala",
+  "name": "Top News Show Unblocker",
+  "version": "1.0.0",
+  "background": {
+     "service_worker": "background.js"
+  },
+  "action": {
+    "name": "Click to unblock.",
+    "matches": [
+      "https://topnewsshow.com/"  
+    ]
+  },
+  "permissions": [ 
+    "tabs", 
+    "activeTab",
+    "scripting"
+  ],
+  "host_permissions": [
+    "https://topnewsshow.com/"
+  ],
+  "icons": {
+    "48": "icon.png"
+  }
+}
